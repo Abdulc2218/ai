@@ -1,1 +1,23 @@
+<html>
+  <head>
+    <title>RevsDex</title>
+  </head>
+  <body>
+    <header>
+      <h1>RevsDex</h1>
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="features.html">Features</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero">
+      <h1>The All New Dex Bot</h1>
+      <p>RevsDex the cars based Dex Bot</p>
+      <button type="submit">Learn More</button>
+  </body>
+</html>
+
 
