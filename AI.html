@@ -10,13 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg: #0b0c10;             /* page background */
-      --panel: #101218;          /* section panel */
-      --card: #151827;           /* card surface */
-      --muted: #a8b0c2;          /* secondary text */
-      --text: #f5f7ff;           /* primary text */
-      --accent: #8b5cf6;         /* violet */
-      --accent-2: #b794f6;       /* light violet */
+      --bg: #0b0c10;            
+      --panel: #101218;         
+      --card: #151827;         
+      --muted: #a8b0c2;         
+      --text: #f5f7ff;          
+      --accent: #8b5cf6;        
+      --accent-2: #b794f6;       
       --ring: rgba(139,92,246,.55);
       --grad: conic-gradient(from 160deg at 50% 50%, #8b5cf6 0%, #4f46e5 30%, #06b6d4 55%, #8b5cf6 100%);
       --radius-xl: 20px;
@@ -43,7 +43,7 @@
     .section{padding:72px 0}
     .grid{display:grid; gap:24px}
 
-    /* Header */
+    
     header{
       position:sticky; top:0; z-index:50;
       backdrop-filter:saturate(160%) blur(12px);
@@ -69,7 +69,7 @@
     }
     .btn-ghost{background:rgba(255,255,255,.02)}
 
-    /* Hero */
+
     .hero{display:grid; grid-template-columns: 1.15fr .85fr; gap:40px; align-items:center; padding:56px 0}
     .badge{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; font-size:.85rem; background:rgba(139,92,246,.12); border:1px solid rgba(139,92,246,.25)}
     h1{font-size: clamp(36px, 4.2vw, 56px); line-height:1.05; margin:16px 0 18px; letter-spacing:-.5px}
@@ -86,17 +86,17 @@
     .hero-swoosh{position:absolute; inset:10% 8% 8% 10%; background:url('https://images.unsplash.com/photo-1607644941052-d9f3bde2d9a9?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat; filter:saturate(130%) hue-rotate(-10deg)}
     .hero-glow{position:absolute; inset:-20% -30% -30% -20%; background:radial-gradient(50% 50% at 60% 40%, rgba(139,92,246,.65), transparent 55%), radial-gradient(50% 50% at 40% 60%, rgba(6,182,212,.45), transparent 55%); filter: blur(60px); opacity:.55; z-index:-1}
 
-    /* Logos */
+
     .logos{display:grid; grid-template-columns:repeat(6,1fr); gap:22px; opacity:.85}
     .logos div{height:40px; border-radius:12px; display:grid; place-items:center; background:rgba(255,255,255,.02); border:var(--border)}
 
-    /* Section titles */
+
     .eyebrow{letter-spacing:.18em; text-transform:uppercase; font-weight:700; font-size:.85rem; color:#c4c9d7}
     .title{font-size: clamp(28px, 3.2vw, 42px); margin:10px 0 18px}
     .title .accent{color:var(--accent-2)}
     .subtitle{color:var(--muted); max-width:70ch}
 
-    /* Feature steps */
+
     .steps{grid-template-columns: repeat(3, 1fr)}
     .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:var(--border); border-radius:var(--radius-xl); padding:24px; box-shadow:var(--shadow-1)}
     .icon{
@@ -105,7 +105,7 @@
     .card h3{margin:16px 0 8px}
     .card p{color:var(--muted)}
 
-    /* Pricing */
+
     .pricing{grid-template-columns: repeat(3, 1fr)}
     .price-card{position:relative; padding:26px; border-radius:22px; background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:var(--border); box-shadow:var(--shadow-2)}
     .price-card.highlight{background:linear-gradient(180deg, rgba(139,92,246,.18), rgba(255,255,255,.03)); outline: 1px solid rgba(139,92,246,.5)}
@@ -120,26 +120,26 @@
     .features{display:grid; gap:10px; margin:14px 0 20px; color:var(--muted)}
     .features li{display:flex; gap:10px}
 
-    /* Blog */
+
     .blog{grid-template-columns: repeat(4, 1fr)}
     .post{overflow:hidden; border-radius:18px; background:var(--panel); border:var(--border)}
     .post .thumb{aspect-ratio: 16/10; background:#111; background-size:cover; background-position:center}
     .post .meta{padding:14px 16px}
     .post small{opacity:.75}
 
-    /* CTA banner */
+
     .cta-banner{position:relative; overflow:hidden; border-radius:26px; border:var(--border); background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); min-height:220px; display:grid; grid-template-columns: 1.1fr .9fr; align-items:center; box-shadow:var(--shadow-2)}
     .cta-banner .art{position:relative; height:100%;}
     .cta-banner .blob{position:absolute; inset:10% 8% 10% 10%; background:url('https://images.unsplash.com/photo-1614851099131-31bd732ff9b6?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat; filter:saturate(140%)}
 
-    /* Footer */
+
     footer{border-top:var(--border); padding:36px 0 60px; color:#c5cad6}
     .foot{display:grid; grid-template-columns: 1.1fr .9fr; gap:24px}
     .links{display:grid; grid-template-columns: repeat(3, 1fr); gap:16px}
     .links a{display:block; padding:6px 0; opacity:.85}
     .links a:hover{opacity:1}
 
-    /* Responsive */
+
     @media (max-width: 1024px){
       .hero{grid-template-columns: 1fr; gap:28px}
       .cta-banner{grid-template-columns: 1fr}
@@ -154,7 +154,7 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
+
   <header>
     <div class="container nav">
       <div class="brand">
@@ -174,7 +174,7 @@
   </header>
 
   <main>
-    <!-- Hero -->
+
     <section class="container hero">
       <div>
         <span class="badge">✨ New – AI‑assisted brand kits</span>
@@ -191,7 +191,7 @@
       </div>
     </section>
 
-    <!-- Logos -->
+
     <section class="container section" aria-label="Trusted by">
       <div class="logos">
         <div>Logoipsum</div>
@@ -203,7 +203,7 @@
       </div>
     </section>
 
-    <!-- Features / Steps -->
+
     <section id="features" class="container section">
       <div>
         <div class="eyebrow">Workflow</div>
@@ -245,7 +245,7 @@
       </div>
     </section>
 
-    <!-- Pricing -->
+
     <section id="pricing" class="container section">
       <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:18px; flex-wrap:wrap">
         <div>
@@ -262,7 +262,7 @@
       </div>
 
       <div class="grid pricing" style="margin-top:18px">
-        <!-- Free -->
+ 
         <article class="price-card">
           <h3>Free</h3>
           <div class="price"><strong id="p-free">$0</strong><span>/m</span></div>
@@ -275,7 +275,7 @@
           <a href="#" class="btn btn-ghost" style="width:100%">Get Started</a>
         </article>
 
-        <!-- Basic -->
+ 
         <article class="price-card highlight">
           <div class="badge" style="position:absolute; top:18px; right:18px">Most Popular</div>
           <h3>Basic</h3>
@@ -291,7 +291,7 @@
           <a href="#" class="btn btn-primary" style="width:100%">Get Started</a>
         </article>
 
-        <!-- Pro -->
+
         <article class="price-card">
           <h3>Pro</h3>
           <div class="price"><strong id="p-pro">$29.99</strong><span>/m</span></div>
@@ -309,7 +309,7 @@
       </div>
     </section>
 
-    <!-- Insights / Blog -->
+
     <section id="insights" class="container section">
       <div>
         <div class="eyebrow">Resources</div>
@@ -353,7 +353,7 @@
       </div>
     </section>
 
-    <!-- CTA Banner -->
+
     <section class="container section">
       <div class="cta-banner">
         <div style="padding:26px 26px 32px">
@@ -367,8 +367,7 @@
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
+  
   <footer>
     <div class="container foot">
       <div>
@@ -402,7 +401,7 @@
   </footer>
 
   <script>
-    // Smooth in‑page links
+
     document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener('click', e=>{
         const id = a.getAttribute('href');
@@ -413,11 +412,11 @@
       });
     });
 
-    // Pricing toggle (Monthly / Yearly with 20% off applied to yearly)
+
     const switchEl = document.getElementById('billingSwitch');
     const prices = {
       monthly: { basic: 14.99, pro: 29.99 },
-      yearly:  { basic: 14.99*12*0.8, pro: 29.99*12*0.8 } // 20% savings
+      yearly:  { basic: 14.99*12*0.8, pro: 29.99*12*0.8 } 
     };
     const fmt = v => '$' + v.toFixed(2).replace(/\.00$/,'');
     const updatePrices = yearly => {
@@ -438,3 +437,4 @@
   </script>
 </body>
 </html>
+
